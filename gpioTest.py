@@ -11,19 +11,20 @@ def blinkLed():
         sleep(1)
 
 p1 = Process(target=blinkLed)
+blinkLed()
 
-while True:
-    print("What do you want to do?")
-    s = input()
-    if(s == "start"):
-        p1.start
-        p1.run
-    elif(s == "stop"):
-        p1.kill    
-    elif(s == "exit"):
-        exit(0)
-    else:
-        print("That is not an option!")
+#while True:
+ #   print("What do you want to do?")
+  #  s = input()
+   # if(s == "start"):
+    #    p1.start
+     #   p1.run
+    #elif(s == "stop"):
+     #   p1.kill    
+    #elif(s == "exit"):
+     #   exit(0)
+    #else:
+     #   print("That is not an option!")
 
 
 
