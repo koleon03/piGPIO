@@ -17,6 +17,7 @@ while True:
     s = input()
     if(s == "start"):
         p1.start
+        p1.run
     elif(s == "stop"):
         p1.kill    
     elif(s == "exit"):
