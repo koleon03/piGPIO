@@ -17,15 +17,14 @@ def blinkLed():
 
 g = GlobalVars()
 g.kill = False
-t1 = Thread(target=blinkLed, daemon=True)
-t1.start()
+
 
 while True:
     print("What do you want to do?")
     s = input()
     if(s == "start"):
-        g.kill = False
-        t1.run()
+        th = Thread(target=blinkLed, daemon=True)
+        th.start()
     elif(s == "stop"):
         g.kill = True  
     elif(s == "exit"):
