@@ -10,7 +10,7 @@ def blinkLed():
         led.off()
         sleep(1)
 
-p1 = Process(target=blinkLed, daemon=True)
+p1 = Process(target=blinkLed)
 
 while True:
     print("What do you want to do?")
