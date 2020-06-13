@@ -15,6 +15,10 @@ def blinkLed():
         led.off()
         sleep(1)
 
+def genNewThread():
+    th = Thread(target=blinkLed, daemon=True)
+    return th
+
 g = GlobalVars()
 g.kill = False
 
@@ -23,8 +27,8 @@ while True:
     print("What do you want to do?")
     s = input()
     if(s == "start"):
-        th = Thread(target=blinkLed, daemon=True)
-        th.start()
+        th = genNewThread
+        th.start()  
     elif(s == "stop"):
         g.kill = True  
     elif(s == "exit"):
