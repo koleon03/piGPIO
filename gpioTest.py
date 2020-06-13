@@ -19,10 +19,10 @@ while True:
         if(p1.is_alive):
             print("Blink is already running!")
         else:
-            p1.start()
+            p1.start
     elif(s == "stop"):
         if(p1.is_alive):
-            p1.kill()
+            p1.kill
         else:
             print("Blink isn't running!")
     elif(s == "exit"):
