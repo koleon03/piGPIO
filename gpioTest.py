@@ -18,6 +18,7 @@ def blinkLed():
 g = GlobalVars()
 g.kill = False
 t1 = Thread(target=blinkLed, daemon=True)
+t1.start()
 
 while True:
     print("What do you want to do?")
