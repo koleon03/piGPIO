@@ -25,7 +25,7 @@ while True:
     s = input()
     if(s == "start"):
         g.kill = False
-        t1.start
+        t1.run()
     elif(s == "stop"):
         g.kill = True  
     elif(s == "exit"):
