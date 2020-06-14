@@ -30,12 +30,12 @@ g.kill = False
 while True:
     print("What do you want to do?")
     s = input()
-    if(s == 1):
+    if(s == '1'):
         g.kill = False
         startThread()
-    elif(s == 2):
+    elif(s == '2'):
         g.kill = True  
-    elif(s == 3):
+    elif(s == '3'):
         exit(0)
     else:
         print("That is not an option!")
