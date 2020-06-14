@@ -30,12 +30,12 @@ g.kill = False
 while True:
     print("What do you want to do?")
     s = input()
-    if(s == "start"):
+    if(s == 1):
         g.kill = False
         startThread()
-    elif(s == "stop"):
+    elif(s == 2):
         g.kill = True  
-    elif(s == "exit"):
+    elif(s == 3):
         exit(0)
     else:
         print("That is not an option!")
